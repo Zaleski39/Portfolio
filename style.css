@@ -1,0 +1,931 @@
+        *, ::after, ::before {
+            margin : 0;
+            padding : 0;
+            box-sizing: border-box;
+            }
+
+        body{
+            background-image: url(assets/img/concert1.jpg);
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            background-size: cover;
+            background-position: center;
+            }
+
+        .acceuil{
+            height: 80vh;    
+            } 
+
+/* Vidéo */
+    
+        .acceuilVideo10{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border : none;
+            }
+
+        section .acceuilVideo{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            }
+
+/* Découpage vidéo */
+        section .acceuilVideo#acceuilVideo1{
+            clip-path: polygon(0 0, 0% 100%, 100% 100%);
+            }
+
+        section .acceuilVideo#acceuilVideo2{
+            clip-path: polygon(0 0, 100% 0, 100% 100%);    
+            }
+
+        section .acceuilVideo video{
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            }
+
+/* Titre h1 Developpeur Web */ 
+    
+        .acceuilTitre{
+            font-family: Arial, Helvetica, sans-serif;
+            color : rgb(228, 214, 214);
+            background: #030001b6;
+            width: 100%;
+            position: absolute;
+            z-index: 10;
+            margin-top: 10vh; 
+            padding: 10px 0px 10px 50px;
+            font-size : 1.5em;
+            }
+
+/* Scrool Down */
+
+        .demo{
+            color : white;                  
+            }
+            
+        .hidden{
+            display: none;
+            }
+
+        #Scroll a {
+            padding-top: 60px;
+            }
+
+        #Scroll a span {
+            position: absolute;
+            top: 85%;
+            left: 50%;
+            width: 30px;
+            height: 50px;
+            margin-left: -15px;
+            border: 2px solid #fff;
+            border-radius: 50px;
+            box-sizing: border-box;
+            z-index: 100;
+            }
+
+        #Scroll a span::before {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            content: '';
+            width: 6px;
+            height: 6px;
+            margin-left: -3px;
+            background-color: #fff;
+            border-radius: 100%;
+            -webkit-animation: sdb10 2s infinite;
+            animation: sdb10 2s infinite;
+            box-sizing: border-box;
+            }
+
+        @-webkit-keyframes sdb10 {
+                0% {
+                -webkit-transform: translate(0, 0);
+                opacity: 0;
+                }
+                40% {
+                opacity: 1;
+                }
+                80% {
+                -webkit-transform: translate(0, 20px);
+                opacity: 0;
+                }
+                100% {
+                opacity: 0;
+                }
+            }
+
+        @keyframes sdb10 {
+                0% {
+                transform: translate(0, 0);
+                opacity: 0;
+                }
+                40% {
+                opacity: 1;
+                }
+                80% {
+                transform: translate(0, 20px);
+                opacity: 0;
+                }
+                100% {
+                opacity: 0;
+                }
+            }
+
+
+/* Icones */
+        .iconesContainer{
+            margin-top: 20px;
+            display: flex;
+            margin-left: 20px;
+            }
+
+        .icones{
+            width: 32px ;
+            margin: 0 10px;
+            }
+
+        .pageVide{
+            height: 100vh;
+        }
+
+/* Page Apropos */
+
+        .aPropos{
+            padding-top : 100px;
+            }
+
+        .aProposBlock{
+            background: #030001b6;
+            width: 100%;
+            }
+
+        .aProposPhotoProfil{
+            width: 200px;
+            height : 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 50px;
+            margin-left: 30px;
+            }
+
+        .aProposTires{
+            color: white;
+            margin-left: 30px;
+            margin-top: 20px;
+            }
+
+        .aProposTexte{
+            color : rgb(228, 214, 214);
+            font-style: italic;
+            margin-left: 40px;
+            margin-bottom: 0;
+            }
+
+        .aProposParagraphe{
+            color : rgb(228, 214, 214);
+            padding : 20px;
+            }
+
+/* Progress Barre */
+
+        .mh-skills .mh-professional-skill{
+            color: white;
+        }
+
+        .mh-skills .mh-professional-skill h3{
+            font-size: 30px;
+            line-height: 40px;
+            text-align: center;
+            font-weight: 400;
+            margin-bottom: 60px;
+            font-family: 'Poppins', sans-serif;
+            }
+
+/* Titre circle bar */
+        .mh-professional-skills{
+            color: white;
+            }
+
+        .mh-professional-skills h3{
+            font-size: 30px;
+            line-height: 40px;
+            text-align: center;
+            font-weight: 400;
+            margin-bottom: 60px;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            }
+
+        .mh-professional-progress li{
+            display: inline-block;
+            margin: 0 auto;
+            float: none;
+            width: 48%;
+            margin-bottom: 30px;
+            text-align: center;
+            }
+
+        .mh-progress{
+            margin-bottom : 10px;
+            font : 900 1.14285/1 Cinzerl, cursive;
+            color: white;
+            }
+
+        .mh-progress .progressbar-text{
+            color: white !important;
+            font-weight: 400 ;
+            font-family: 'Poppins', sans-serif;
+            }
+
+        .progress.progress-line{
+            height: 10px;
+            margin-right: 60px ;
+        }
+
+        .progress.progress-line .progressbar-text{
+            position: absolute;
+            top : 50%;
+            left: 100%;
+            width: 60px;
+            transform: translateY(-35%);
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .mh-progress.mh-progress-circle{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+        }
+/* Couleur barre de progression circle */
+
+        .mh-progress path:nth-child(1){
+            stroke: rgba(0,0,0,0.7)
+        }
+
+        .mh-progress path:nth-child(2){
+            stroke: #0bceaf;
+        }
+
+        .candidators{
+            position: relative;
+            margin-bottom: 15px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .candidators .parcial{
+            display: inline-block;
+            width: 100%;
+            vertical-align: middle;
+        }
+
+        .candidators .parcial .info{
+            position: relative;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .candidators .parcial .info .nome{
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 15px;
+            font-weight: 400;
+            opacity: 0.9;
+            font-family: 'Poppins', sans-serif;
+            }
+
+        .candidators .parcial .info .percentage-num{
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 14px;
+            font-weight: normal;
+        }
+
+        .candidators .parcial .progressBar{
+            position: relative;
+            width: 100%;
+            height: 7px;
+            margin: 38px 0 2px;
+            border-radius: 10px;
+            background-color: rgba(0,0,0,0.5);
+        }
+
+        .percentagem{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 7px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background: #0bceaf;
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+        .percentagem.lancerAnimation{
+            transition: 3s all;
+            animation-duration: 3s;
+            animation-name: animationProgress ;
+        }
+
+        @keyframes animationProgress{
+            from{
+                width: 0 ;
+            }
+        }
+
+/* Page Mes PROJETS */
+
+    /* Gestion superposition projet avec batterie */
+
+            .mesProjetsPhoto{
+                margin-top: 300px ;
+                }
+
+            .projetPhoto{
+                position : relative;
+                text-align: center;
+                width: fit-content;
+                height: fit-content;
+                margin: 100px;
+                }
+            
+                @media (max-width: 1000px)  {
+                    .projetPhoto{
+                        margin: 0;
+                    }
+                }
+
+            .mesProjetsPhotoTitre{
+                position: absolute;
+                top : 5%;
+                left : 40%;
+                color: white;
+                font-size: 4em;
+                }
+
+            .batterie0{
+                box-shadow: 0 0 40px 40px rgba(0, 0, 0, 0.8) inset;
+                }
+
+            .batterie {
+                width: 100%;
+                height: auto;
+                position: relative;
+                z-index: -1;
+                box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.6) ;
+                }
+
+            .batteriePortrait {
+                width: 100%;
+                height: auto;
+                position: relative;
+                z-index: -1;
+                box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.6) ;
+                display : none;
+                }
+
+            
+            @media (max-width: 600px)  {
+                .batterie {
+                    display : none;
+                    }
+                .batteriePortrait{
+                    display: block;
+                }
+            }
+    
+            
+
+
+            .projet0Photo0{
+                position: absolute;
+                width: 100%;
+                top : 0;
+                left:0 ;
+                }
+
+/* Projet 1 - LRC Voyage */
+
+            .projet1Titre{
+                position : absolute;
+                top : 68%;
+                left: 12.1%;
+                color: black;
+                font-size: 1.5vw;
+                color: white;
+                text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+                }
+
+                @media (max-width: 600px)  {
+                    .projet1Titre{
+                        top : 48%;
+                        left: 17%;
+                        font-size: 3vw;
+                        }
+                }    
+
+            .projet1Titre:hover{
+                cursor: pointer;
+                }
+
+            .projet1Lettre{
+                position : absolute;
+                top : 55%;
+                left: 15%;
+                text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+                }
+
+            @media (max-width: 600px)  {
+                .projet1Lettre{
+                    top : 41%;
+                    left: 22%;
+                    font-size: 14vw;
+                    }
+            } 
+                    
+
+            .projet1Photo1{
+                position: absolute;
+                border-radius: 50%;
+                object-fit: cover;
+                top: 53.8%;
+                left: 8.5%;
+                height: 29%;
+                width: 17.4%;
+                opacity: 1;
+                }
+
+            @media (max-width: 600px)  {
+                .projet1Photo1{
+                    top: 41%;
+                    left: 11%;
+                    height: 17%;
+                    width: 30.5%;
+                    }
+                }
+
+            .projet1Photo1:hover{
+                cursor: pointer;
+                transform: rotate(-10deg) scale(1.2);
+                transition-duration: 1s;
+                }
+                    
+/* Projet 2 - Aldebert */
+
+            .projet2Titre{
+                position : absolute;
+                top : 70%;
+                left: 78%;
+                color: black;
+                font-size: 1.5vw;
+                z-index: 10;
+                color: white;
+                text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+                }
+
+
+            @media (max-width: 600px)  {
+                .projet2Titre{
+                    top: 48%;
+                    left: 70%;
+                    font-size: 3vw;
+                    }
+            }
+
+            .projet2Titre:hover{
+                cursor: pointer;
+                }
+
+            .projet2Lettre{
+                position : absolute;
+                top : 57%;
+                left: 79%;
+                text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+                }
+
+            @media (max-width: 600px)  {
+                .projet2Lettre{
+                    top : 43%;
+                    left: 75%;
+                    font-size: 14vw;
+                    }
+            } 
+
+            .projet2Photo2{
+                position: absolute;
+                border-radius: 50%;
+                object-fit: cover;
+                top: 55%;
+                left: 72.9%;
+                height: 32.5%;
+                width: 18.5%;
+                opacity: 1;
+                }    
+                                
+            @media (max-width: 600px)  {
+                .projet2Photo2{
+                    top: 41%;
+                    left: 63%;
+                    height: 19%;
+                    width: 33%;
+                    }
+            }
+
+            .projet2Photo2:hover{
+                cursor: pointer;
+                transform: rotate(-10deg) scale(1.2);
+                transition-duration: 1s;
+                }
+
+/* Projet 3 - Puissance 4 */
+
+            .projet3Titre{
+                position : absolute;
+                top : 50%;
+                left: 58.5%;
+                color: black;
+                font-size: 1.5vw;
+                z-index: 10;
+                color: white;
+                text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+                }
+
+
+            @media (max-width: 600px)  {
+                .projet3Titre{
+                    top: 31%;
+                    left: 51%;
+                    font-size: 3vw;
+                    }
+                }
+
+            .projet3Titre:hover{
+                cursor: pointer;
+                }
+
+            .projet3Lettre{
+                position : absolute;
+                top : 37%;
+                left: 62%;
+                text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+                }
+
+            @media (max-width: 600px)  {
+                .projet3Lettre{
+                    top: 26%;
+                    left: 58%;
+                    font-size: 12vw;
+                    }
+                }
+    
+
+            .projet3Photo3{
+                position: absolute;
+                border-radius: 50%;
+                object-fit: cover;
+                top: 38.5%;
+                left: 56.4%;
+                height: 25%;
+                width: 15%;
+                opacity: 1;
+                }   
+        
+                
+            @media (max-width: 600px)  {
+                .projet3Photo3{
+                    top: 27.5%;
+                    left: 50%;
+                    height: 11.5%;
+                    width: 21%;
+                    }
+                }
+
+            .projet3Photo3:hover{
+                cursor: pointer;
+                transform: rotate(-10deg) scale(1.2);
+                transition-duration: 1s;
+                }
+
+/* Projet 4 - Restaurant */
+
+            .projet4Titre{
+                position : absolute;
+                top : 75%;
+                left: 43%;
+                color: black;
+                font-size: 1.5vw;
+                z-index: 10;
+                color: white;
+                text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+                }
+
+
+            @media (max-width: 600px)  {
+                .projet4Titre{
+                    top: 28%;
+                    left: 28%;
+                    font-size: 3vw;
+                    }
+                }
+
+            .projet4Titre:hover{
+                cursor: pointer;
+                }
+
+            .projet4Lettre{
+                position : absolute;
+                top : 61%;
+                left: 46%;
+                text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+                }
+
+            @media (max-width: 600px)  {
+                .projet4Lettre{
+                    top: 22%;
+                    left: 33%;
+                    font-size: 14vw;
+                    }
+                }
+
+            .projet4Photo4{
+                position: absolute;
+                border-radius: 50%;
+                object-fit: cover;
+                top: 61.7%;
+                left: 40.6%;
+                height: 28.5%;
+                width: 15%;
+                opacity: 1;
+                }
+                
+            @media (max-width: 600px)  {
+                .projet4Photo4{
+                    top: 23%;
+                    left: 26%;
+                    height: 13%;
+                    width: 21%;
+                    }
+                }
+
+            .projet4Photo4:hover{
+                cursor: pointer;
+                transform: rotate(-10deg) scale(1.2);
+                transition-duration: 1s;
+                }
+
+/* Projet 5 - Bricolage */
+
+            .projet5Titre{
+                position : absolute;
+                top : 49%;
+                left: 29%;
+                color: black;
+                font-size: 1.5vw;
+                z-index: 10;
+                color: white;
+                text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+                }
+
+            @media (max-width: 600px)  {
+                .projet5Titre{
+                    top: 31%;
+                    left: 6%;
+                    font-size: 3vw;
+                    }
+                }
+
+            .projet5Titre:hover{
+                cursor: pointer;
+                }
+
+            .projet5Lettre{
+                position : absolute;
+                top : 35%;
+                left: 29.5%;
+                text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+                }
+
+            @media (max-width: 600px)  {
+                .projet5Lettre{
+                    top: 23.6%;
+                    left: 8%;
+                    font-size: 14vw;
+                    }
+                }
+
+            .projet5Photo5{
+                position: absolute;
+                border-radius: 50%;
+                object-fit: cover;
+                top: 39%;
+                left: 27.3%;
+                height: 21%;
+                width: 12%;
+                opacity: 1;
+                }  
+                
+            @media (max-width: 600px)  {
+                .projet5Photo5{
+                    top: 27%;
+                    left: 5.5%;
+                    height: 11%;
+                    width: 17%
+                    }
+                }
+
+            .projet5Photo5:hover{
+                cursor: pointer;
+                transform: rotate(-10deg) scale(1.2);
+                transition-duration: 1s;
+            }
+
+/* Lettre musique supplémentaires */
+
+        /* Lettre G */
+
+            .projet6Lettre{
+                position : absolute;
+                top : 71%;
+                left: 60%;
+                text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+            }
+
+        @media (max-width: 600px)  {
+            .projet6Lettre{
+                top: 56%;
+                left: 43%;
+                font-size: 14vw;
+                }
+            }
+
+        /* Lettre S */
+            .projet7Lettre{
+                position : absolute;
+                top : 10%;
+                left: 10%;
+                text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+                }
+                
+            @media (max-width: 600px)  {
+                .projet7Lettre{
+                    top: 19%;
+                    left: 86%;
+                    font-size: 14vw;
+                    }
+                }
+
+        /* Lettre H */
+        .projet8Lettre{
+                position : absolute;
+                top : 5%;
+                left: 80%;
+                text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+                }
+
+        @media (max-width: 600px)  {
+            .projet8Lettre{
+                top : 10%;
+                left: 58%;
+                font-size: 14vw;
+                }
+            }
+
+        /* Lettre F */
+            .projet9Lettre{
+                position : absolute;
+                top : 22%;
+                left: 72.5%;
+                z-index: 10;
+                text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+                }
+
+            @media (max-width: 600px)  {
+                .projet9Lettre{
+                    top : 10%;
+                    left: 12%;
+                    font-size: 14vw;
+                    }
+                }
+
+        /* Toutes les lettres */
+            .key{
+
+                color: rgb(228, 188, 128);
+                font-size: 8vw;
+                }
+
+            .playing{
+                transition-duration: 0.3s;
+                color : rgb(216, 32, 32);
+                font-size: 9vw;
+            }
+
+/* Modal*/
+
+            .photoModalProjet1{
+                width: 100%;
+                height: 100%;
+                }
+            .modal-dialog {
+                max-width: 800px !important;
+                }
+
+            .modalTitre{
+                width: 100%;
+                text-align: center;
+                }
+
+            .modalTexte{
+                text-align: left;
+                margin-top: 20px;;
+                }
+
+
+/* Bouton Batterie */
+
+            .boutonProjets{
+                position :absolute;
+                top: 5%;
+                left :30%;
+                width: 150px;
+                padding: 0.75rem 1.25rem;
+                border-radius: 50rem;
+                color: #495057;
+                background-color: #fff;
+                border: 1px solid rgba(0,0,0,.125);
+                }
+
+            .boutonMusique{
+                position :absolute;
+                top: 5%;
+                left :50%;
+                width: 150px;
+                padding: 0.75rem 1.25rem;
+                border-radius: 50rem;
+                color: #495057;
+                background-color: #fff;
+                border: 1px solid rgba(0,0,0,.125);
+                }
+
+            @media (max-width: 900px)  {
+                .boutonProjets{
+                    width: 150px;
+                    left :28%;
+                    padding: 0.2rem 1.25rem;
+                }
+                .boutonMusique{
+                    width: 150px;
+                    left :50%;
+                    padding: 0.2rem 1.25rem;
+                }
+            }
+
+            @media (max-width: 740px)  {
+                .boutonProjets{
+                    width: 150px;
+                    left :25%;
+                    padding: 0.2rem 1.25rem;
+                }
+                .boutonMusique{
+                    width: 150px;
+                    left :52%;
+                    padding: 0.2rem 1.25rem;
+                }
+            }
+
+            @media (max-width: 600px)  {
+                .boutonProjets{
+                    width: 150px;
+                    top: 1%;
+                    left :10%;
+                    padding: 0.2rem 1.25rem;
+                }
+                .boutonMusique{
+                    width: 150px;
+                    top: 1%;
+                    left :55%;
+                    padding: 0.2rem 1.25rem;
+                }
+            }
+
+
+
+            .active1{
+                background: linear-gradient(90deg, rgba(0,0,0,1) 0% , rgba(228, 188, 128) 0%,rgb(214, 196, 34) 100%);
+                border-color: #ff004000;
+                color: white;
+                }
