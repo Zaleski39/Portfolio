@@ -38,9 +38,9 @@
     .typeString ('<span style="color: #C5DADF">My </span> <span style="color: #EA8C10">SQL </span> ! ')
     .pauseFor (1000)
     .deleteChars (11)
-    .typeString ('<span style="color: #3FB27F">VueJS </span> ! ')
+    .typeString ('<span style="color: #3FB27F">Symfony </span> ! ')
     .pauseFor (1000)
-    .deleteChars (10)
+    .deleteChars (12)
     .typeString ('<span style="color: #E86327">HTML </span> ! ')
     .pauseFor (1000)
     .deleteChars (8)
@@ -99,7 +99,10 @@
                 }               
             })     
 
+            var dejaJouer = 0;
+
             boutonMusique.addEventListener("click", () => {
+                                
                 // Modifier la couleur du couton actif
                     boutonProjets.classList.remove("active1");
                     boutonMusique.className += ' active1';  
@@ -111,8 +114,23 @@
                     // console.log(essai)
                 for(let i=0 ; i<musique.length ; i++){   
                     musique[i].style.display = "block";
-                }               
+                }    
+               if (dejaJouer === 0) {
+                document.body.classList.add("stop-scrolling");  
+                document.getElementById("alerteJouer").style.display = "flex";               
+
+               }
+                setTimeout(() => {
+                    // alert("Pour jouer, utiliser votre clavier ;-)")  
+                  
+                  }, 30)      
             }) 
+
+            function jouerBatterie(){
+                document.getElementById("alerteJouer").style.display = "none";  
+                document.body.classList.remove("stop-scrolling");
+                dejaJouer = 1;
+            }
 
 // Son Batterie
                 
@@ -133,14 +151,9 @@
                 // enlever la class playing
             function removeTransition(e) {                    
                 e.target.classList.remove('playing');     
-                }    
-                
-                
+                }         
 
             const keys = Array.from(document.querySelectorAll('.key')); // Créer tableau avec l'ensemble des divs key
             // console.log(keys);
-            keys.forEach(key => key.ontransitionend = (removeTransition));  //ecoute élément tableau, appel fonction removeTransition à la fin de l'animation
-             
-                
+            keys.forEach(key => key.ontransitionend = (removeTransition));  //ecoute élément tableau, appel fonction removeTransition à la fin de l'animation             
             window.addEventListener('keydown', playSound);
-
